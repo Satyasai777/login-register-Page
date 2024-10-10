@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.body{
+    background: #c9d6ff;
+    background: linear-gradient(to-right, #e2e2e2, #c9d6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+}
+.container{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.35);
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    min-height: 350px;
+    padding: 10px 10px;
+}
+
+form h1{
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 10px rgb(51, 0, 255),
+    0px 0px 20px rgb(102, 0, 255),
+    0px 0px 40px rgb(174, 68, 7),
+    0px 0px 80px cyan;
+    margin-top: 20px;
+}
+
+p{
+    text-align: center;
+    margin-top:13px ;
+    font-size:x-small;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn button{
+    background-color: #010029;
+    color: white;
+    font-size: 13px;
+    padding: 10px 35px;
+    bottom: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(34,31,31,0.3);
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.btn button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: linear-gradient(to top right,rgb(71, 30, 204),rgb(231, 68, 237));
+    z-index: -1;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+.btn button:hover{
+    z-index: 0;
+    box-shadow: 25px 0 100px #fff,
+    -25px 0 100px cyan;
+    color: black;
+    font-size: 600;
+    transform: scale(1.1);
+}
+
+.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up div{
+    width: 55%;
+}
+
+.container input{
+    background-color: #eee;
+    border: none;
+    display: flex;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
